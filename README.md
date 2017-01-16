@@ -1,4 +1,4 @@
-# Docker for Larave 5 projects
+# Docker for Laravel 5 projects
 
 If you want to develop locally but don't want the hassle of maintaining Apache,
 MySQL and various hosts files this is for you.
