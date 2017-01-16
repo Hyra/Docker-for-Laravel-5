@@ -20,4 +20,13 @@ over `http://localhost` pain free.
 - Navigate to `http://localhost`
 - Profit
 
+## Some Notes
 
+Please notice you can still use a tool like Sequel Pro to connect to your local
+database. Just connect to `127.0.0.1` with `root / root`
+
+You can't run `php artisan` from your local machine, but need to do this from
+inside the container. This can be done by running `docker ps` and finding the
+Container ID of the webserver container. Then simply run: `docker exec -t -i
+container_id /bin/bash` which launches you into bash on the webserver container
+where you can run all your webserver commands!
