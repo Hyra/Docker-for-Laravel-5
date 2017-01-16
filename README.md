@@ -19,6 +19,7 @@ over `http://localhost` pain free.
 - Run `docker-compose up`
 - Navigate to `http://localhost`
 - Profit
+- Optionally: add `.data` to your `.gitignore file (see Note below)
 
 ## Some Notes
 
