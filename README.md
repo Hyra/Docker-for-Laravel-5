@@ -22,11 +22,16 @@ over `http://localhost` pain free.
 
 ## Some Notes
 
+### MySQL Connection
 Please notice you can still use a tool like Sequel Pro to connect to your local
 database. Just connect to `127.0.0.1` with `root / root`
 
+### PHP Artisan
 You can't run `php artisan` from your local machine, but need to do this from
 inside the container. This can be done by running `docker ps` and finding the
 Container ID of the webserver container. Then simply run: `docker exec -t -i
 container_id /bin/bash` which launches you into bash on the webserver container
 where you can run all your webserver commands!
+
+### .data folder
+I chose to store the mysql database container data inside a folder `.data` within the project root folder. You might want to add this folder to your `.gitignore` as this easily takes up 200+ MB. On the other hand, when you want to share your local database with all your other team members it might actually make sense to version control this. Please note I haven't tested this out yet so I don't know if this is actually a viable option.
